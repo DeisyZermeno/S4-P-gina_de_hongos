@@ -1,0 +1,118 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header fijo */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #6b705c;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    z-index: 1000;
+}
+
+
+/* Barra lateral */
+aside {
+    position: sticky;
+    top: 5rem; /* Queda pegada justo debajo del header */
+    width: 200px;
+    background-color: #fefae0;
+    padding: 1rem;
+    height: 250px;
+}
+
+aside nav ul {
+    list-style: none;
+}
+
+aside nav ul li {
+    margin: 0.5rem 0;
+}
+
+aside nav ul li a {
+    text-decoration: none;
+    color: #6b705c;
+    font-size: 20px;
+}
+/* Contenedor principal */
+main {
+    margin-left: 220px; /* Espacio para la barra lateral */
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Posicionamiento absolute */
+#beneficios {
+    position: relative; /* Base relativa para el contenido absoluto */
+    padding: 2rem;
+    background-color: #d8f3dc;
+    border: 2px solid #95d5b2;
+}
+
+#beneficios::before {
+    content: "🌿";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    font-size: 2rem;
+    color: #95d5b2;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #6b705c;
+    color: white;
+}
+
+p.subp{
+    color: darkolivegreen;
+    font-size:20px ;
+    font-weight: bold;
+}
+
+p.subp0{
+    color: darkolivegreen;
+    font-size:18px ;
+    font-weight: bold;
+}
+.caja{
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    align-items: center;
+    padding: 20px;
+    gap:20px;
+    }
+
+img{
+    max-width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-top: 40px;
+
+    
+}
+figcaption {
+    font-size: 14px; /* Tamaño del texto */
+    color: #555; /* Color del texto */
+    margin-top: 0px; /* Espacio entre la imagen y el pie */
+    font-style: italic; /* Hace que el texto sea cursivo */
+}
