@@ -40,12 +40,6 @@ El proyecto fue inspirado por la increíble diversidad de los hongos y su releva
 
 ---
 
-## 🖼️ Vista Previa
-
-![Vista Previa de la Página de Hongos](https://via.placeholder.com/800x400)  
-_(Nota: Reemplaza este enlace con una captura real de tu página.)_
-
----
 
 ## 📝 Licencia
 
